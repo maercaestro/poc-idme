@@ -1,0 +1,22 @@
+{
+  "name": "poc-idme",
+  "version": "1.0.0",
+  "description": "POC – Telegram → GPT-4o → Playwright agentic workflow for Malaysian idMe portal",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.25.0",
+    "mongoose": "^8.5.0",
+    "openai": "^4.55.0",
+    "playwright": "^1.45.0",
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

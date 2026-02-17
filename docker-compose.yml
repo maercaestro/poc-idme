@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  app:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: mongodb://mongo:27017/poc_idme
+
+volumes:
+  mongo_data:

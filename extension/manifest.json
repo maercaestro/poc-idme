@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "idMe Session Sync",
+  "version": "1.0.0",
+  "description": "Captures idMe session cookies and pushes them to Supabase for the POC automation bot.",
+  "permissions": ["cookies", "storage", "activeTab"],
+  "host_permissions": ["https://idme.moe.gov.my/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon48.png"
+  },
+  "icons": {
+    "48": "icon48.png"
+  }
+}
